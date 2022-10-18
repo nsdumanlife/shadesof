@@ -1,0 +1,19 @@
+{
+  "name": "shades-of-grey",
+  "version": "1.0.0",
+  "description": "An npm library that takes a number n as a parameter and return an array containing n shades of grey in hexadecimal code.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nsdumanlife/shades-of-grey.git"
+  },
+  "author": "Numan Selman Duman <numanselmanduman@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nsdumanlife/shades-of-grey/issues"
+  },
+  "homepage": "https://github.com/nsdumanlife/shades-of-grey#readme"
+}
