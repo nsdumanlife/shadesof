@@ -4,7 +4,24 @@
   "description": "An npm library that takes a number n as a parameter and return an array containing n shades of grey in hexadecimal code.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "lint-staged",
+    "lint-all": "pretty-quick && eslint",
+    "prepare": "husky install"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "pretty-quick --staged",
+      "eslint --fix"
+    ],
+    "*.+(json|css|md)": [
+      "pretty-quick --staged"
+    ]
   },
   "repository": {
     "type": "git",
@@ -17,6 +34,14 @@
   },
   "homepage": "https://github.com/nsdumanlife/shades-of-grey#readme",
   "devDependencies": {
-    "prettier": "^2.7.1"
+    "eslint": "^8.25.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "pretty-quick": "^3.1.3"
   }
 }
