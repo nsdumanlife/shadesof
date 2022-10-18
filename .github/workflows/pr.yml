@@ -6,7 +6,7 @@ on:
       - '**.js'
 
 jobs:
-  check-backend:
+  build:
     runs-on: ubuntu-latest
     defaults:
       run:
