@@ -7,9 +7,17 @@
     "test": "jest",
     "test-watch": "jest --watchAll",
     "test-coverage": "jest --collect-coverage --testEnvironment=node --forceExit --maxWorkers=1",
+    "test:coveralls": "jest --coverage && coveralls < coverage/lcov.info",
     "lint": "lint-staged",
     "lint-all": "pretty-quick && eslint",
     "prepare": "husky install"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "**/*.js",
+      "!data/keyMap.js",
+      "!/node_modules/"
+    ]
   },
   "husky": {
     "hooks": {
@@ -36,6 +44,7 @@
   },
   "homepage": "https://github.com/nsdumanlife/shades-of-grey#readme",
   "devDependencies": {
+    "coveralls": "^3.1.1",
     "eslint": "^8.25.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.5.0",
