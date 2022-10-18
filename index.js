@@ -1,5 +1,6 @@
 /* eslint-disable no-plusplus */
 function shadesOfGrey(n) {
+  if (!Number.isInteger(n)) throw new Error(`'n' must be a number.`)
   if (n <= 0) return []
 
   const shades = ['#010101']
@@ -12,6 +13,7 @@ function shadesOfGrey(n) {
 
     shades.push(`#${temp}`)
   }
+
   return shades
 }
 
