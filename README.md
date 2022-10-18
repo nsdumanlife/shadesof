@@ -1,6 +1,6 @@
 ![example workflow](https://github.com/nsdumanlife/shades-of-grey/actions/workflows/pr.yml/badge.svg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Coverage Status](https://coveralls.io/repos/github/nsdumanlife/shades-of-grey/badge.svg?branch=master)](https://coveralls.io/github/taniarascia/chip8?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/nsdumanlife/shades-of-grey/badge.svg?branch=main)](https://coveralls.io/github/nsdumanlife/shades-of-grey?branch=main)
 
 # shades-of-grey
 
