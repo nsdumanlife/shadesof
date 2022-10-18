@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/nsdumanlife/shades-of-grey/issues"
   },
-  "homepage": "https://github.com/nsdumanlife/shades-of-grey#readme"
+  "homepage": "https://github.com/nsdumanlife/shades-of-grey#readme",
+  "devDependencies": {
+    "prettier": "^2.7.1"
+  }
 }
