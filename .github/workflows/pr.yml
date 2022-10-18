@@ -1,0 +1,23 @@
+name: 'Test shade-of-grey'
+
+on:
+  pull_request:
+    paths:
+      - '**.js'
+
+jobs:
+  check-backend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+      - name: install dependencies
+        run: npm install
+      - name: run test
+        run: npm test
