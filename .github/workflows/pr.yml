@@ -1,4 +1,4 @@
-name: 'Test shade-of-grey'
+name: 'Tests'
 
 on:
   pull_request:
@@ -20,4 +20,8 @@ jobs:
       - name: install dependencies
         run: npm install
       - name: run test
-        run: npm test
+        run: npm run test-coverage
+      - name: Coveralls
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
