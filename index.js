@@ -18,5 +18,3 @@ function shadesOfGrey(n) {
 }
 
 module.exports = shadesOfGrey
-
-// This line just added for test.
