@@ -1,6 +1,6 @@
 {
   "name": "shadesof",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An npm library that takes a number n as a parameter and return an array containing n shades of grey in hexadecimal code.",
   "main": "index.js",
   "scripts": {
