@@ -57,7 +57,7 @@ console.log(shadesOfGrey(5))
 - Add other main colors
 - Pick random shade of a color feature
 
-This library work in progress. Feel free to contribute!
+This library is working in progress. Feel free to contribute!
 
 &nbsp;
 
