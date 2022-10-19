@@ -35,14 +35,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nsdumanlife/shades-of-grey.git"
+    "url": "git+https://github.com/nsdumanlife/shadesof.git"
   },
   "author": "Numan Selman Duman <numanselmanduman@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nsdumanlife/shades-of-grey/issues"
+    "url": "https://github.com/nsdumanlife/shadesof/issues"
   },
-  "homepage": "https://github.com/nsdumanlife/shades-of-grey#readme",
+  "homepage": "https://github.com/nsdumanlife/shadesof#readme",
   "devDependencies": {
     "coveralls": "^3.1.1",
     "eslint": "^8.25.0",
