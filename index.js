@@ -1,20 +1,28 @@
 /* eslint-disable no-plusplus */
 function shadesOfGrey(n) {
-  if (!Number.isInteger(n)) throw new Error(`'n' must be a number.`)
-  if (n <= 0) return []
+  if (!Number.isInteger(n)) throw new Error(`Parameter must be a number.`)
 
-  const shades = ['#010101']
+  /* The grey color is composed by the same number of red, green and blue: #010101, #aeaeae, or #555555.
+  Black: #000000 and white: #ffffff are not accepted values. So there are 254 shades of grey */
+  const numberOfShades = 254
 
-  for (let i = 1; i < Math.min(n, 254); i++) {
-    let temp = '010101'
-    temp = (parseInt(temp, 16) + i * 0x010101).toString(16)
+  const shades = []
 
-    if (temp.length < 6) temp = `0${temp}`
+  // There are 2 middle elements because numberOfShades array length is even
+  let lighter = Math.floor((numberOfShades + 1) / 2)
+  let darker = Math.ceil((numberOfShades + 1) / 2)
 
-    shades.push(`#${temp}`)
+  for (let i = 1; i <= Math.min(n, numberOfShades); i++) {
+    if (i % 2 === 0) {
+      shades.push(darker)
+      darker++
+    } else {
+      shades.push(lighter)
+      lighter--
+    }
   }
 
-  return shades
+  return shades.map(x => `#${x.toString(16).repeat(3)}`)
 }
 
 module.exports = shadesOfGrey
