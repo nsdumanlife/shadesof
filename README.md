@@ -4,7 +4,7 @@
 
 # shadesof
 
-A library that takes a number n as a parameter and return an array containing n shades of grey in hexadecimal code. There are 254 shades of grey in this library. First shade of the grey is `#010101` , second one `#020202` and the last one is `#FEFEFE`.
+A library that takes a number n as a parameter and return an array containing n shades of grey in hexadecimal code. There are 254 shades of grey in this library. First shade of the grey is `#7F7F7F` , second one `#808080`, it keeps continue by adding one lighter and one darker shade to array.
 
 ## &nbsp;
 
@@ -40,12 +40,12 @@ node example.js
 
 ```ruby
 console.log(shadesOfGrey(1))
-// Output: ["#010101"]
+// Output: ["#7f7f7f"]
 ```
 
 ```ruby
 console.log(shadesOfGrey(5))
-// Output: ["#010101", "#020202", "#030303", "#040404", "#050505"]
+// Output: ['#7f7f7f', '#808080', '#7e7e7e', '#818181', '#7d7d7d']
 ```
 
 &nbsp;
