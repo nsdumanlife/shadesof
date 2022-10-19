@@ -2,7 +2,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Coverage Status](https://coveralls.io/repos/github/nsdumanlife/shades-of-grey/badge.svg?branch=main)](https://coveralls.io/github/nsdumanlife/shades-of-grey?branch=main)
 
-# shades-of-grey
+# shadesof
 
 A library that takes a number n as a parameter and return an array containing n shades of grey in hexadecimal code. There are 254 shades of grey in this library. First shade of the grey is `#010101` , second one `#020202` and the last one is `#FEFEFE`.
 
@@ -15,7 +15,7 @@ A library that takes a number n as a parameter and return an array containing n 
 Install the library:
 
 ```sh
-npm install shades-of-grey
+npm install shadesof
 ```
 
 &nbsp;
@@ -27,7 +27,7 @@ npm install shades-of-grey
 Import and call it in a file by passing an integer instead of 'n'.
 
 ```ruby
-const shadesOfGrey = require('shades-of-grey')
+const shadesOfGrey = require('shadesof')
 
 shadesOfGrey(n)
 ```
