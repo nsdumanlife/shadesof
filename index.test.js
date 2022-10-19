@@ -2,26 +2,30 @@
 const shadesOfGrey = require('./index')
 
 describe('shadesOfGrey function', () => {
-  test(`if n=1, should return ['#010101']`, () => {
+  test(`if n=1, should return ['#7f7f7f']`, () => {
     const result = shadesOfGrey(1)
-    const expectedOutput = ['#010101']
+    const expectedOutput = ['#7f7f7f']
 
     expect(result[0]).toBe(expectedOutput[0])
   })
 
-  test('if n=10, should return ["#010101", "#020202", "#030303", "#040404", "#050505", "#060606", "#070707", "#080808", "#090909", "#0a0a0a"]', () => {
+  test(`if n=10, should return ['#7f7f7f', '#808080',
+  '#7e7e7e', '#818181',
+  '#7d7d7d', '#828282',
+  '#7c7c7c', '#838383',
+  '#7b7b7b', '#848484']`, () => {
     const result = shadesOfGrey(10)
     const expectedOutput = [
-      '#010101',
-      '#020202',
-      '#030303',
-      '#040404',
-      '#050505',
-      '#060606',
-      '#070707',
-      '#080808',
-      '#090909',
-      '#0a0a0a',
+      '#7f7f7f',
+      '#808080',
+      '#7e7e7e',
+      '#818181',
+      '#7d7d7d',
+      '#828282',
+      '#7c7c7c',
+      '#838383',
+      '#7b7b7b',
+      '#848484',
     ]
 
     expect(result.length).toBe(10)
@@ -49,6 +53,6 @@ describe('shadesOfGrey function', () => {
   })
 
   test(`if n is not a number, should throw error message 'n must be a number.'`, () => {
-    expect(() => shadesOfGrey('nsd')).toThrow(`'n' must be a number.`)
+    expect(() => shadesOfGrey('nsd')).toThrow(`Parameter must be a number.`)
   })
 })
